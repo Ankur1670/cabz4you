@@ -1,0 +1,76 @@
+@media (max-width: 991.98px) {
+
+    .header .contact-info a {
+       font-size: 10px;
+        align-items: center;
+        
+        }
+        .header .contact-info{
+
+            font-size: 10px;
+        }
+        .navbar-collapse {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: auto; /* Ensure it's on the right */
+            width: 80%; /* Adjust width as needed */
+            background-color: red; /* Background color for the menu */
+            box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+            border: 2px solid black;
+            /* padding: 23px; */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        .navbar-nav {
+            border-top: 1px solid white; /* Top border */
+        }
+        .navbar-nav .nav-item {
+            border-bottom: 1px solid white; /* Bottom border for each item */
+        }
+        .navbar-nav .nav-link {
+            color: white; /* Text color */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ccc; /* Hover text color */
+        }        
+    
+       
+        .navbar-collapse.show {
+            transform: translateX(0);
+        }
+        .navbar-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            padding: 10px;
+            background: none;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: #000; /* Close button color */
+          }
+          
+          .navbar-close:hover {
+            color: #ff0000; /* Close button color on hover */
+          }
+          .mobile-close-button {
+            display: none; /* Hide on desktop */
+        }
+
+}
+
+@media (max-width: 767.98px) {
+    .custom-logo {
+        margin-left: 12px;
+    }
+    .mobile-close-button {
+        display: block; /* Show on mobile */
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+}
